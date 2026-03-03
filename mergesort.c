@@ -39,7 +39,7 @@ ge the temporary arrays back into arr[left..right]
         k++;
     }
 
-    // Copy the remaining elements of rightArr[], if any
+  
     while (j < n2) {
         arr[k] = rightArr[j];
         j++;
@@ -47,17 +47,17 @@ ge the temporary arrays back into arr[left..right]
     }
 }
 
-// The subarray to be sorted is in the index range [left-right]
+
 void mergeSort(int arr[], int left, int right) {
     if (left < right) {
      
         int mid = left + (right - left) / 2;
 
-        // Sort first and second halves
+        
         mergeSort(arr, left, mid);
         mergeSort(arr, mid + 1, right);
 
-        // Merge the sorted halves
+      
         merge(arr, left, mid, right);
     }
 }
@@ -66,7 +66,7 @@ int main() {
     int arr[] = { 12, 11, 13, 5, 6, 7 };
     int n = sizeof(arr) / sizeof(arr[0]);
 	
-  	// Sorting arr using mergesort
+  
     mergeSort(arr, 0, n - 1);
 
     for (int i = 0; i < n; i++)
