@@ -32,7 +32,7 @@ ge the temporary arrays back into arr[left..right]
         k++;
     }
 
-    // Copy the remaining elements of leftArr[], if any
+
     while (i < n1) {
         arr[k] = leftArr[i];
         i++;
@@ -50,8 +50,7 @@ ge the temporary arrays back into arr[left..right]
 // The subarray to be sorted is in the index range [left-right]
 void mergeSort(int arr[], int left, int right) {
     if (left < right) {
-      
-        // Calculate the midpoint
+     
         int mid = left + (right - left) / 2;
 
         // Sort first and second halves
