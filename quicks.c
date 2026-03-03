@@ -20,7 +20,7 @@ int partition(int arr[], int low, int high) {
     return i + 1;
 }
 
-// The QuickSort function implementation
+
 void quickSort(int arr[], int low, int high) {
     if (low < high) {
         
