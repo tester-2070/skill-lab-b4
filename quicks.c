@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//comment by pavan
 void swap(int* a, int* b);
 int partition(int arr[], int low, int high) {
     
